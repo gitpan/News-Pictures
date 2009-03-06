@@ -1,0 +1,12 @@
+Build.PL
+Changes
+MANIFEST
+Makefile.PL
+README
+lib/News/Pictures.pm
+lib/News/editnews.pm
+lib/News/rechservernews.pm
+t/00-load.t
+t/pod-coverage.t
+t/pod.t
+META.yml
