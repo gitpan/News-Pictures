@@ -11,11 +11,11 @@ News::Pictures - The great new News::Pictures!
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 
 =head1 SYNOPSIS
@@ -55,7 +55,9 @@ Please report any bugs or feature requests to C<bug-news-pictures at rt.cpan.org
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=News-Pictures>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
+=head1 SEE ALSO
 
+Dependance: Tk, Tk::JPEG, IO::File, Convert::UU, Net::NNTP::Client
 
 
 =head1 SUPPORT
