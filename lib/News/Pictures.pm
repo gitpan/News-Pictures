@@ -1,7 +1,7 @@
 package News::Pictures;
 
 use warnings;
-use strict;
+#use strict;
 
 use News::editnews;
 editnews();
@@ -11,11 +11,11 @@ News::Pictures - The great new News::Pictures!
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 
 =head1 SYNOPSIS

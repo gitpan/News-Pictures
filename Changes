@@ -3,4 +3,6 @@ Revision history for News-Pictures
 0.01    4/3/2009
         First version, released on an unsuspecting world.
 0.02    11/3/2009
-        various modification to return the distibution correspondent to the cpan
+        various modifications to return the distibution correspondent to the cpan
+0.03	16/3/2009 
+	we remove "use strict;"
