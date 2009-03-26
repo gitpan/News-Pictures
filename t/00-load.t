@@ -1,13 +1,9 @@
 #!perl -T
 
-use Test::More tests => 3;
+use Test::More tests => 1; 
 
-BEGIN {
-	use_ok( 'News::Pictures' );
-	use_ok( 'News::rechservernews' );
-	use_ok( 'News::editnews' );
-	use_ok( 'News::tr1' );
-	use_ok( 'News::server' );
+BEGIN { 
+        use_ok( 'News::tr1' );
 }
 
 diag( "Testing News::Pictures $News::Pictures::VERSION, Perl $], $^X" );
