@@ -1,6 +1,6 @@
 ---
 name: News-Pictures
-version: 0.04
+version: 0.05
 author:
   - 'Christian Guine <c.guine@free.fr>'
 abstract: 'a package which allows to search photographs in a forum, to show them and possibly to save them'
@@ -12,7 +12,7 @@ build_requires:
 provides:
   News::Pictures:
     file: lib/News/Pictures.pm
-    version: 0.04
+    version: 0.05
 generated_by: Module::Build version 0.32
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
