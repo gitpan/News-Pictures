@@ -3,7 +3,7 @@ package News::Pictures;
 use warnings;
 #use strict;
 
-use News::editnews;
+use News::Pictures::editnews; 
 editnews();
 =head1 NAME
 
@@ -11,11 +11,11 @@ News::Pictures - The great new News::Pictures!
 
 =head1 VERSION
 
-Version 0.06
+Version 0.07
 
 =cut
 
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 
 
 =head1 SYNOPSIS

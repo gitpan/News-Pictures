@@ -14,7 +14,7 @@
 # rechservernews.pl    research on waiter of news 
 sub rechservernews {
         use Tk;
-        use News::tr1;
+        use News::Pictures::tr1;
         # Definition of main window 
         $mainr = MainWindow->new();
         menuservernews();
@@ -58,7 +58,7 @@ sub menuservernews {              # Fabrication menu
 
 sub accesservernews {
         if ($accesnews ne "OK") {
-                use News::server;         # focus on zone for seizure
+                use News::Pictures::server;         # focus on zone for seizure
                 use Net::NNTP::Client;
                 my ($nomserver, $code) = @_;
                 $server = Net::NNTP->new($nomserver)
@@ -115,7 +115,7 @@ sub selectforum {
 }
 
 sub finr {
-        use News::editnews;
+        use News::Pictures::editnews;
         # index = selection range
         @index = $lst->curselection();
         $forum = $list[$index[0]];

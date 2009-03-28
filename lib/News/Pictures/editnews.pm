@@ -14,8 +14,8 @@
 # editnews.pm      Edition news photos
 sub editnews {
         use Tk;
-        use News::tr1;
-        use News::server;
+        use News::Pictures::tr1;
+        use News::Pictures::server;
         server();       # Recovery shape
         # Definition of main window 
         $main = MainWindow->new();
@@ -74,7 +74,7 @@ sub menu {              # menu
 }
 
 sub affichage {         # billing name forum or seizure of forum name
-        use News::server;
+        use News::Pictures::server;
         server();       # Recovery shape
         $frame2 = $frame1->Frame(-width => 150, -height => 700)->pack;
         $frame20 = $frame2->Frame(-width => 150, -height => 10)->pack;
@@ -123,8 +123,8 @@ sub trait {             # Extract forum name
 
 sub nouveauforum {
         # new forum seizure
-        use News::rechservernews;
-        use News::server;
+        use News::Pictures::rechservernews;
+        use News::Pictures::server;
         server();
         # forum seizure
         $nomnews = $entrynomnews->get;

@@ -1,4 +1,4 @@
-News-Pictures version 0.06
+News-Pictures
 
 The README is used to introduce the module and provide instructions on
 how to install the module, any machine dependencies it may have (for
@@ -27,12 +27,6 @@ Alternatively, to install with Module::Build, you can use the following commands
 	./Build
 	./Build test
 	./Build install
-        
-DEPENDENCIES
-
-This module requires these other modules and libraries:
-
-  Tk, Net::NNTP::Client, Tk::JPEG, IO::File, Convert::UU
 
 SUPPORT AND DOCUMENTATION
 
@@ -62,3 +56,4 @@ Copyright (C) 2009 Christian Guine
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
+
