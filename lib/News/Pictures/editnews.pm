@@ -144,9 +144,11 @@ sub traitement {
         # accès news
         use Net::NNTP::Client;
         use IO::File;
+        use News::Pictures::server;
+        server();
         # Forum Access
-        $client = new Net::NNTP::Client('news.free.fr',
-                'server' => 'news.free.fr', 'port' => 119,
+        $client = new Net::NNTP::Client($nomnews,
+                'server' => $nomnews, 'port' => 119,
                 );
         ($nb_articles, $premier, $dernier, $nomgroupe) = 
                 $client->group($labelnews);
@@ -258,6 +260,8 @@ sub affichimage {
         # Billing next button and save
         $frame233 = $frame23->Frame(-width => 100, -height => 100)->pack;
         if ($cpt <= $dernier) {
+                my $label2331 = $frame233->Label(-text => ("Article : " . $cpt . "                             "),
+                        -font => "Nimbus 5")->pack(-side=>'left');
                 my $Button2331 = $frame233->Button(-text=>tr1('Suivant'), -command => [\&suivant])
                         ->pack(-side=>'left');
                 my $Button2332 = $frame233->Button(-text=>tr1('Sauvegarde'), -command => [\&sauvegarde])
