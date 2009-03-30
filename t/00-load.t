@@ -1,9 +1,9 @@
 #!perl -T
 
-use Test::More tests => 2;
+use Test::More tests => 1;
 
 BEGIN {
-	use_ok( 'News::Pictures' );
+	use_ok( 'Tk' );
 	
 }
 
