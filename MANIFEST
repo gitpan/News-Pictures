@@ -4,6 +4,10 @@ MANIFEST
 Makefile.PL
 README
 lib/News/Pictures.pm
+lib/News/Pictures/tr1.pm
+lib/News/Pictures/server.pm
+lib/News/Pictures/editnews.pm
+lib/News/Pictures/rechservernews.pm 
 t/00-load.t
 t/pod-coverage.t
 t/pod.t
