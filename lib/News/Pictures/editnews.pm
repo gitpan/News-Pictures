@@ -274,8 +274,31 @@ sub affichimage {
         } else {
                 # Billing picture
                 my $photo = $frame24->Photo(-format => 'jpeg',
-                            -file   => 'photo1/tmp.jpg');
-                $frame24->Label(-image => $photo)->pack;
+                        -file => 'photo1/tmp.jpg');
+                my $recalphoto = $frame24->Photo;
+                $photo->update;
+                my $recalheight = $photo->height;
+                my $recalwidth = $photo->width;
+                print ("largeur " . $recalwidth . " hauteur " . $recalheight . "\n");
+                # calibration of image
+                my $coefx = int($recalwidth / 500);
+                my $coefy = int($recalheight / 300);
+                if ($coefx < $coefy) {
+                        $coef = $coefx + 1;
+                } else {
+                        $coef = $coefy + 1;
+                }
+                $recalphoto->copy($photo,
+                        -subsample => ($coef,
+                                $coef),
+                                );
+                $frame24->Label(-image => $recalphoto,
+                        -borderwidth => 2,
+                        -relief => 'sunken',
+                        )->pack(-padx => 5, -pady => 5);
+                #my $photo = $frame24->Photo(-format => 'jpeg',
+                 #           -file   => 'photo1/tmp.jpg');
+                #$frame24->Label(-image => $photo)->pack(-padx => 5, -pady => 5);
         }
         #print "suivant\n";
 }
